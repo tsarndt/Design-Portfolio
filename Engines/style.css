@@ -1,0 +1,194 @@
+/* SLIDER 1 - PROJECT 1 DETAILS
+===========================================*/
+#wowslider-container1, #wowslider-container2, #wowslider-container3, #wowslider-container4, #wowslider-container5, #wowslider-container6, #wowslider-container7, #wowslider-container8, #wowslider-container9, #wowslider-container10, #wowslider-container11, #wowslider-container12, #wowslider-container13, #wowslider-container14, #wowslider-container15, #wowslider-container16, #wowslider-container17, #wowslider-container18, #wowslider-container19, #wowslider-container20 { 
+	display: table;
+	zoom: 1; 
+	position: relative;
+	width: 100%;
+	height: 100px;
+	max-width: 800px;
+	max-height: 600px;
+	margin:0px auto;
+	z-index:90;
+
+
+	/* reset box-sizing (to boostrap friendly) */
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box; 
+}
+
+.carousel .ws_images ul li{
+	position: relative;
+	width:1%;
+	height:100%;
+	line-height:0; /*opera*/
+	overflow: hidden;
+	float:left;
+	/*font-size:0;*/
+	padding:0 0 0 0 !important;
+	margin:0 0 0 0 !important;
+}
+
+.carousel .ws_images{
+	position: relative;
+	left:0;
+	top:0;
+	height:100%;
+	max-height:600px;
+	max-width: 800px;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.carousel .ws_images ul a{
+	width:100%;
+	height:100%;
+	max-height:600px;
+	display:block;
+	color:transparent;
+}
+
+.carousel img{
+	max-width: none !important;
+}
+
+.carousel .ws_images .ws_list img,
+.carousel .ws_images > div > img{
+	width:100%;
+	border:none 0;
+	max-width: none;
+	padding:0;
+	margin:0;
+}
+.carousel .ws_images > div > img {
+	max-height:600px;
+}
+
+.carousel a{ 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+}
+
+.carousel .ws_bullets { 
+	float: right;
+	position:relative;
+	left: 0;
+	z-index:70;
+}
+
+.carousel .ws_bullets { 
+	padding: 3px 0; 
+}
+
+.carousel .ws_bullets a { 
+	width:14px;
+	height:14px;
+	background: url(bullet.png) left top;
+	float: left; 
+	text-indent: -4000px; 
+	position:relative;
+	margin-left:4px;
+	color:transparent;
+}
+
+.carousel .ws_bullets a:hover, .carousel .ws_bullets a.ws_selbull{
+	background-position: 0 100%;
+}
+
+.carousel a.ws_next, .carousel a.ws_prev {
+	position:absolute;
+	top:50%;
+	margin-top:-2em;
+	z-index:60;
+	width: 2em;	
+	height: 4em;
+	background-size:200%;
+}
+
+.carousel a.ws_next{
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	right:0;
+}
+
+.carousel a.ws_prev {
+	background-position: 0 0;
+	background-repeat: no-repeat; 
+	left:0;
+}
+
+/*@media all and (max-width: 400px){
+	.carousel .ws_bullets{
+		display: none
+	}
+}*/
+
+
+/*XS Devices - PHONES LANDSCAPE
+=========================================*/
+@media only screen and (max-width: 667px) and (orientation: landscape){
+	#wowslider-container1, #wowslider-container2, #wowslider-container3, #wowslider-container4, #wowslider-container5, #wowslider-container6, #wowslider-container7, #wowslider-container8, #wowslider-container9, #wowslider-container10, #wowslider-container11, #wowslider-container12, #wowslider-container13, #wowslider-container14, #wowslider-container15, #wowslider-container16, #wowslider-container17, #wowslider-container18, #wowslider-container19, #wowslider-container20 { 
+		display: table;
+		zoom: 1; 
+		position: relative;
+		width: 100%;
+		height: 100px;
+		max-width: 334px;
+		max-height: 250px;
+		margin:0px auto;
+		z-index:90;
+
+
+		/* reset box-sizing (to boostrap friendly) */
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box; 
+	}
+
+	.carousel .ws_bullets{
+		display: none;
+	}
+}
+
+
+
+
+
+
+/*XS Devices - PHONES
+==========================================*/
+@media only screen and (max-device-width: 480px){
+	.carousel a.ws_next, .carousel a.ws_prev {
+		position:absolute;
+		top:50%;
+		margin-top:-1.5em;
+		z-index:60;
+		width: 1.5em;	
+		height: 3em;
+		background-size:200%;
+	}
+}
+
+/* SLIDER ARROWS
+===========================================*/
+#wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev, #wowslider-container2 a.ws_next, #wowslider-container2 a.ws_prev, #wowslider-container3 a.ws_next, #wowslider-container3 a.ws_prev, #wowslider-container4 a.ws_next, #wowslider-container4 a.ws_prev{
+	background-image: url(arrows_P1.png);
+}
+
+#wowslider-container5 a.ws_next, #wowslider-container5 a.ws_prev, #wowslider-container6 a.ws_next, #wowslider-container6 a.ws_prev, #wowslider-container7 a.ws_next, #wowslider-container7 a.ws_prev, #wowslider-container8 a.ws_next, #wowslider-container8 a.ws_prev{
+	background-image: url(arrows_P2.png);
+}
+
+#wowslider-container9 a.ws_next, #wowslider-container9 a.ws_prev, #wowslider-container10 a.ws_next, #wowslider-container10 a.ws_prev, #wowslider-container11 a.ws_next, #wowslider-container11 a.ws_prev, #wowslider-container12 a.ws_next, #wowslider-container12 a.ws_prev{
+	background-image: url(arrows_P3.png);
+}
+
+#wowslider-container13 a.ws_next, #wowslider-container13 a.ws_prev, #wowslider-container14 a.ws_next, #wowslider-container14 a.ws_prev, #wowslider-container15 a.ws_next, #wowslider-container15 a.ws_prev, #wowslider-container16 a.ws_next, #wowslider-container16 a.ws_prev{
+	background-image: url(arrows_P4.png);
+}
+
+#wowslider-container17 a.ws_next, #wowslider-container17 a.ws_prev, #wowslider-container18 a.ws_next, #wowslider-container18 a.ws_prev, #wowslider-container19 a.ws_next, #wowslider-container19 a.ws_prev, #wowslider-container20 a.ws_next, #wowslider-container20 a.ws_prev{
+	background-image: url(arrows_P5.png);
+}
